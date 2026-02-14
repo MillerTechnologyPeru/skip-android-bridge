@@ -12,13 +12,13 @@ import Foundation
 #if canImport(FoundationNetworking)
 @_exported import FoundationNetworking
 #endif
-#if canImport(AndroidLogging)
-@_exported import AndroidLogging
+#if canImport(SkipAndroidLogging)
+@_exported import SkipAndroidLogging
 #elseif canImport(OSLog)
 @_exported import OSLog
 #endif
-#if canImport(AndroidLooper)
-@_exported import AndroidLooper
+#if canImport(SkipAndroidLooper)
+@_exported import SkipAndroidLooper
 #endif
 #if canImport(AndroidNative)
 import AndroidNative
